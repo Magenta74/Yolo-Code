@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thegioididong.com - Trang đăng ký</title>
-    <link rel="stylesheet" href="css/formdangky.css"></link>
+    <link rel="stylesheet" href="css/formdangky.css">
+    </link>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div id="header">
         <div class="navbar">
@@ -15,7 +18,7 @@
                     <h1><img class="logo" src="img/logo.png" width="20px" alt="" /></h1>
                 </div>
                 <div class="">
-                    <a href="#">Trang chủ</a>
+                    <a href="index.html">Trang chủ</a>
                     <div class="taikhoan">
                         <button class="tk1">Sản phẩm
                             <i class="tk2"></i>
@@ -76,66 +79,69 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
-<section>
-    <div class="form_dangky">
-        <h2>Tạo Tài Khoản</h2>
-        <div class="col_left">
-        <table>
-            <tr>
-                <td><a>Tên đăng nhập:*</a></td>
-                <td><input type="text" class="style" id="txtTenTK" placeholder="Nhập tên đăng nhập" autofocus></td>
-            </tr>
-            <tr>
-                <td><a>Mật khẩu:*</a></td>
-                <td><input type="password" class="style" placeholder="Nhập mật khẩu" id="txtMatKhau"></td>
-            </tr>
-            <tr>
-                <td><a>Xác nhận mật khẩu:*</a></td>
-                <td><input type="password" class="style" id="txtMatKhau_verify" placeholder="Nhập lại mật khẩu ở trên" ></td>
-            </tr>
-            <tr>
-                <td><a>Họ tên:</a></td>
-                <td><input type="text" class="style" id="txtHoTen" placeholder="Nhập họ tên"></td>
-            </tr>
-            <tr>
-                <td><label for="email"><a>Email:*</a></label></td>
-                <td><input type="email" class="style" id="email" placeholder="Nhập địa chỉ email"></td>
-            </tr>
-        </table>
+    <section class="form">
+        <div class="form_dangky">
+            <h2>Tạo Tài Khoản</h2>
+            <div class="col_left">
+                <table>
+                    <tr>
+                        <td><a>Tên đăng nhập:*</a></td>
+                        <td><input type="text" class="style" id="txtTenTK" placeholder="Nhập tên đăng nhập" autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a>Mật khẩu:*</a></td>
+                        <td><input type="password" class="style" placeholder="Nhập mật khẩu" id="txtMatKhau"></td>
+                    </tr>
+                    <tr>
+                        <td><a>Xác nhận mật khẩu:*</a></td>
+                        <td><input type="password" class="style" id="txtMatKhau_verify"
+                                placeholder="Nhập lại mật khẩu ở trên"></td>
+                    </tr>
+                    <tr>
+                        <td><a>Họ tên:</a></td>
+                        <td><input type="text" class="style" id="txtHoTen" placeholder="Nhập họ tên"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><a>Email:*</a></label></td>
+                        <td><input type="email" class="style" id="email" placeholder="Nhập địa chỉ email"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col_right">
+                <table>
+                    <tr>
+                        <td><a>Số Điện Thoại:</a></td>
+                        <td><input type="text" class="style" id="numSoDienThoai" placeholder="Nhập số điện thoại"></td>
+                    </tr>
+                    <tr>
+                        <td><a>Địa chỉ:</a></td>
+                        <td><input type="text" class="style" id="txtDiaChi" placeholder="Nhập địa chỉ"></td>
+                    </tr>
+                    <tr>
+                        <td><a>CMND:</a></td>
+                        <td><input type="text" class="style" id="numCMND" placeholder="Nhập số CMND"> </td>
+                    </tr>
+                    <tr>
+                        <td><a>Ngày sinh:</a></td>
+                        <td><input type="date" class="style" id="dtpBirthday"></td>
+                    </tr>
+                    <tr>
+                        <td><a>Ảnh đại diện:</a></td>
+                        <td>
+                            <input type="file" id="filAnhDaiDien" onchange="HienThiAnh()"><br>
+                            <img src="" id="imgAnhDaiDien" style="width: 75px;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id="btn" onclick="DangKy()">Đăng ký</button></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="col_right">
-            <table>
-            <tr>
-                <td><a>Số Điện Thoại:</a></td>
-                <td><input type="text" class="style" id="numSoDienThoai" placeholder="Nhập số điện thoại"></td>
-            </tr>
-            <tr>
-                <td><a>Địa chỉ:</a></td>
-                <td><input type="text" class="style"  id="txtDiaChi" placeholder="Nhập địa chỉ"></td>
-            </tr>
-            <tr>
-                <td><a>CMND:</a></td>
-                <td><input type="text" class="style" id="numCMND" placeholder="Nhập số CMND"> </td>
-            </tr>
-            <tr>
-                <td><a>Ngày sinh:</a></td>
-                <td><input type="date" class="style" id="dtpBirthday"></td>
-            </tr>
-            <tr>
-                <td><a>Ảnh đại diện:</a></td>
-                <td>
-                    <input type="file" id="filAnhDaiDien" onchange="HienThiAnh()"><br>
-                    <img src="" id="imgAnhDaiDien" style="width: 75px;">  
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><button id="btn" onclick="DangKy()">Đăng ký</button></td>
-            </tr>
-        </table>
-        </div>
-    </div> 
-</section>
-<script src="js/register.js"> </script>
-<script src="./js/slider.js"></script>
+    </section>
+    <script src="js/register.js"> </script>
+    <script src="./js/slider.js"></script>
 </body>
+
 </html>

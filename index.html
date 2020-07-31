@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        th{
-            border:1px solid black;
+        th {
+            border: 1px solid black;
             width: 200px;
         }
-        img{
+
+        img {
             width: 70px;
         }
-        td  {
+
+        td {
             max-width: 200px;
             padding: 10px;
             align-content: center;
 
         }
+
         td#lenovo {
-        
+
             padding-right: 300px;
-          
+
             align-content: center;
         }
+
         div#covy {
-            color:whitesmoke;
+            color: whitesmoke;
             font-size: 30px;
             font-weight: bold;
-            
+
         }
-        div#covy1{
+
+        div#covy1 {
             color: black;
         }
-        table#fsale{
+
+        table#fsale {
             background-image: url("../img/FSAL/p.jpg");
-            background-position:unset;
+            background-position: unset;
         }
+
         td#fsa {
             background-color: white;
         }
+
         th#flashs {
             color: yellow;
             align-content: center;
             border: none;
             font-size: 40px;
         }
-        th#laptopbc{
+
+        th#laptopbc {
             font-size: 50px;
             width: 500px;
         }
-        
-        
     </style>
-    
+
 </head>
+
 <body>
     <div id="header">
         <div class="navbar">
@@ -64,7 +74,7 @@
                     <h1><img class="logo" src="img/logo.png" width="20px" alt="" /></h1>
                 </div>
                 <div class="">
-                    <a href="#">Trang chủ</a>
+                    <a href="index.html">Trang chủ</a>
                     <div class="taikhoan">
                         <button class="tk1">Sản phẩm
                             <i class="tk2"></i>
@@ -93,9 +103,8 @@
                 </div>
             </div>
             <div class="hRight">
-                <button id="gio" onclick="GioHang()"><img id="giohang" src="img/giohang.png" width="12px" height="40px"
-                        alt=""></button>
-                <input type="text" id="txtsearch"><button id="tim" onclick="Timkiem()">
+                <button id="gio" onclick="GioHang()"><img id="giohang" src="img/giohang.png" alt=""></button>
+                <input type="text" id="txtsearch" placeholder="Search"><button id="tim" onclick="Timkiem()">
                     <img id="timkiem" src="img/timkiem.png" width="10px" alt=""> Tìm kiếm
                 </button>
             </div>
@@ -135,7 +144,7 @@
             <th><a href=""><img src="img/product/Acer44-b_37.jpg" alt=""></a></th>
             <th><a href=""><img src="img/product/Huawei44-b_7.jpg" alt=""></a></th>
             <th><a href=""><img src="img/product/MSI44-b_17.png" alt=""></a></th>
-            
+
         </tr>
         <tr align="center">
             <td>Chọn mức giá:</td>
@@ -153,23 +162,34 @@
                 </select>
             </td>
         </tr>
-        <tr  align="center" >
+        <tr align="center">
             <td>Chọn nhu cầu:</td>
             <td><a href=""><img src="img/sidebar/hoc-tap.jpg" alt="" style="width: 150px;"></a>
-                <p>Học tập - Văn phòng</p></td>
-            <td><a href=""><img src="img/sidebar/do-hoa-(tgdd).jpg" alt="" style="width: 150px;"></a><p>Đồ họa</p></td>
-            <td><a href=""><img src="img/sidebar/gaming.jpg" alt="" style="width: 150px;"></a><p>Gaming</p></td>
-            <td><a href=""><img src="img/sidebar/cao-cap.jpg" alt="" style="width: 150px;"></a><p>Cao cấp</p></td>
-            <td><a href=""><img src="img/sidebar/mong-nhe.jpg" alt="" style="width: 150px;"></a><p>Mỏng nhẹ</p></td>
+                <p>Học tập - Văn phòng</p>
+            </td>
+            <td><a href=""><img src="img/sidebar/do-hoa-(tgdd).jpg" alt="" style="width: 150px;"></a>
+                <p>Đồ họa</p>
+            </td>
+            <td><a href=""><img src="img/sidebar/gaming.jpg" alt="" style="width: 150px;"></a>
+                <p>Gaming</p>
+            </td>
+            <td><a href=""><img src="img/sidebar/cao-cap.jpg" alt="" style="width: 150px;"></a>
+                <p>Cao cấp</p>
+            </td>
+            <td><a href=""><img src="img/sidebar/mong-nhe.jpg" alt="" style="width: 150px;"></a>
+                <p>Mỏng nhẹ</p>
+            </td>
         </tr>
         <table id="fsale" border="1px solid black" align="center">
 
             <tr>
-                <th id="flashs" colspan="3" align="padding-left">FLASH SALE ĐÁNH BAY COVID 
-            </th>
-            <th colspan="3" style="border: none;"><h1 style="color:white;">KẾT THÚC SAU:  <span id="lblTime"></span></h1></th>
+                <th id="flashs" colspan="3" align="padding-left">FLASH SALE ĐÁNH BAY COVID
+                </th>
+                <th colspan="3" style="border: none;">
+                    <h1 style="color:white;">KẾT THÚC SAU: <span id="lblTime"></span></h1>
+                </th>
             </tr>
-            
+
             <br><br><br>
             <tr>
                 <td id="slct" style="border: none;">
@@ -180,181 +200,193 @@
                     </div>
                 </td>
 
-<!-- <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                <!-- <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
 <a class="next" onclick="plusSlide(1)">&#10095</a> -->
 
                 <td id="fsa">
-                    <a href=""><img src="img/FSAL/laptop-lenovo-s340-81n70064vn-202561-202561-202561-400x400.jpg" alt="" style="width: 150px"></a>
+                    <a href=""><img src="img/FSAL/laptop-lenovo-s340-81n70064vn-202561-202561-202561-400x400.jpg" alt=""
+                            style="width: 150px"></a>
                     <div>RAM 8GB Ổ CỨNG 1TB</div>
                     <p>Lenovo Ideapad S340 14IWL i3 8145U (81N70064VN)</p>
                     <div>9.590.000₫ <s>11.990.000₫</s></div>
                     <div>
-                        <img src="img/FSAL/balo-lenovo-khuyen-mai-300-100x100.jpg" alt=""
-                        style="width: 30px;">
-                    Tặng Balo lenovo (khuyến mãi) và 1 K.mãi khác
+                        <img src="img/FSAL/balo-lenovo-khuyen-mai-300-100x100.jpg" alt="" style="width: 30px;">
+                        Tặng Balo lenovo (khuyến mãi) và 1 K.mãi khác
                     </div>
-                    
+
                 </td>
                 <td id="fsa">
-                    <a href=""><img src="img/FSAL/lenovo-ideapad-3-14iil05-i7-81wd0040vn-222638-1-400x400.jpg" alt="" style="width: 150px"></a>
+                    <a href=""><img src="img/FSAL/lenovo-ideapad-3-14iil05-i7-81wd0040vn-222638-1-400x400.jpg" alt=""
+                            style="width: 150px"></a>
                     <div>RAM 8GB Ổ CỨNG SSD 512GB</div>
                     <p>Lenovo IdeaPad Slim 3 14IIL05 i7 1065G7 (81WD0040VN)</p>
                     <div>18.090.000₫ <s>18.790.000₫</s></div>
                     <div>
-                        <img src="img/FSAL/balo-lenovo-khuyen-mai-300-100x100.jpg" alt=""
-                        style="width: 30px;">
-                    Tặng Balo lenovo (khuyến mãi) và 1 K.mãi khác
+                        <img src="img/FSAL/balo-lenovo-khuyen-mai-300-100x100.jpg" alt="" style="width: 30px;">
+                        Tặng Balo lenovo (khuyến mãi) và 1 K.mãi khác
                     </div>
                 </td>
                 <td id="fsa">
-                    <a href=""><img src="img/FSAL/acer-aspire-a515-53-5112-i5-8265u-4gb-16gb-1tb-win-198790-400x400.jpg" alt="" style="width: 150px"></a>
+                    <a href=""><img src="img/FSAL/acer-aspire-a515-53-5112-i5-8265u-4gb-16gb-1tb-win-198790-400x400.jpg"
+                            alt="" style="width: 150px"></a>
                     <div>Ổ CỨNG 1TB</div>
                     <p>Acer Aspire A515 53 5112i5 8265U (NX.H6DSV.002)</p>
                     <div>11.990.000₫ <s>14.990.000₫</s></div>
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
                     </div>
                 </td>
                 <td id="fsa">
-                    <a href=""><img src="img/FSAL/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt="" style="width: 150px"></a>
+                    <a href=""><img src="img/FSAL/acer-aspire-3-a315-nx-heesv-00d-221251-1-400x400.jpg" alt=""
+                            style="width: 150px"></a>
                     <div>Ổ CỨNG SSD 256GB</div>
                     <p>Acer Aspire 3 A315 54K 37B0 i3 8130U (NX.HEESV.00D)</p>
                     <div>10.290.000₫ <s>10.990.000₫</s></div>
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 3 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 3 K.mãi khác
                     </div>
                 </td>
                 <td id="fsa">
-                    <a href=""><img src="img/FSAL/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg" alt="" style="width: 150px"></a>
+                    <a href=""><img src="img/FSAL/hp-15s-du0063tu-i5-8265u-4gb-1tb-win10-6zf63pa-204053-400x400.jpg"
+                            alt="" style="width: 150px"></a>
                     <div>Ổ CỨNG 1TB</div>
                     <p>HP 15s du0063TU i5 8265U (6ZF63PA)</p>
                     <div>11.750.000₫ <s>14.690.000₫</s></div>
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 1 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 1 K.mãi khác
                     </div>
                 </td>
             </tr>
 
-            
+
         </table>
         <br>
         <table align="center">
-        <th id="laptopbc">LAPTOP BÁN CHẠY</th>
+            <th id="laptopbc">LAPTOP BÁN CHẠY</th>
         </table>
         <table align="center">
-        <tr>
-            <td id="lenovo"><a href="trangmoi.html">
-                <img src="img/product/lenovo-ideapad-3-15iil05-i3-81we003rvn-720x333-2.jpg" alt="" style="width: 500px;"></a>
-                <p>Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1 (81WE003RVN)
-                    12.990.000₫ 
-                </p>
-            </td>
-            <td><a href="">
-                <img src="img/product/hp-15s-fq1111tu-i3-193r0pa-224012-224012-400x400.jpg" alt="" style="width: 200px;"></a>
-                <div>Ổ CỨNG SSD 256GB</div> 
-                <p>HP 15s fq1111TU i3 1005G1 (193R0PA)
+            <tr>
+                <td id="lenovo"><a href="trangmoi.html">
+                        <img src="img/product/lenovo-ideapad-3-15iil05-i3-81we003rvn-720x333-2.jpg" alt=""
+                            style="width: 500px;"></a>
+                    <p>Lenovo IdeaPad Slim 3 15IIL05 i3 1005G1 (81WE003RVN)
+                        12.990.000₫
+                    </p>
+                </td>
+                <td><a href="">
+                        <img src="img/product/hp-15s-fq1111tu-i3-193r0pa-224012-224012-400x400.jpg" alt=""
+                            style="width: 200px;"></a>
+                    <div>Ổ CỨNG SSD 256GB</div>
+                    <p>HP 15s fq1111TU i3 1005G1 (193R0PA)
                     <div>11.390.000₫</div>
 
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
                     </div>
-                </p>
-            </td>
-            <td><a href="">
-                <img src="img/product/asus-vivobook-x509ma-n4020-br271t-224411-400x400.jpg" alt="" style="width: 200px;"></a>
-                <div>Ổ CỨNG SSD 256GB</div> 
-                <p>Asus VivoBook X509MA N4020 (BR271T)
-                    <div>6.990.000₫</div> 
+                    </p>
+                </td>
+                <td><a href="">
+                        <img src="img/product/asus-vivobook-x509ma-n4020-br271t-224411-400x400.jpg" alt=""
+                            style="width: 200px;"></a>
+                    <div>Ổ CỨNG SSD 256GB</div>
+                    <p>Asus VivoBook X509MA N4020 (BR271T)
+                    <div>6.990.000₫</div>
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
                     </div>
-                </p>
-            </td>
-            <td><a href="">
-                <img src="img/product/asus-vivobook-x509ja-i3-ej480t-225608-400x400.jpg" alt="" style="width: 200px;"></a>
-                <div>Ổ CỨNG SSD 256GB</div> 
+                    </p>
+                </td>
+                <td><a href="">
+                        <img src="img/product/asus-vivobook-x509ja-i3-ej480t-225608-400x400.jpg" alt=""
+                            style="width: 200px;"></a>
+                    <div>Ổ CỨNG SSD 256GB</div>
 
-                <p>Asus VivoBook X509JA i3 1005G1 (EJ480T)
+                    <p>Asus VivoBook X509JA i3 1005G1 (EJ480T)
                     <div>10.890.000₫ </div>
                     <div><img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác</div>
-                </p>
-            </td>
-            
-            
-        </tr>
-    </table>
-    
-    <table align="center">
-        <tr>
-            <td id="lenovo"><a href="">
-                <img src="img/product/acer-aspire-a514-53g-513j-i5-nxhywsv001-720x333.jpg" alt="" style="width: 500px;"></a>
-                <div>Ổ CỨNG SSD 256GB</div> 
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác
+                    </div>
+                    </p>
+                </td>
 
-                <p>Acer Aspire A514 53G 513J i5 1035G1 (NX.HYWSV.001)
-                    18.490.000₫
-                    <!-- <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt="" style="width: 2px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác -->
-                </p>
-            </td>
-            <td><a href="">
-                <img src="img/product/hp-348-g7-i3-9pg83pa-221511-400x400.jpg" alt="" style="width: 200px;"></a>
-                <div>Ổ CỨNG SSD 256GB</div> 
+
+            </tr>
+        </table>
+
+        <table align="center">
+            <tr>
+                <td id="lenovo"><a href="">
+                        <img src="img/product/acer-aspire-a514-53g-513j-i5-nxhywsv001-720x333.jpg" alt=""
+                            style="width: 500px;"></a>
+                    <div>Ổ CỨNG SSD 256GB</div>
+
+                    <p>Acer Aspire A514 53G 513J i5 1035G1 (NX.HYWSV.001)
+                        18.490.000₫
+                        <!-- <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt="" style="width: 2px;"> Tặng Túi chống sốc Laptop 15.6 inch eValu LMP-TP002A và 2 K.mãi khác -->
+                    </p>
+                </td>
+                <td><a href="">
+                        <img src="img/product/hp-348-g7-i3-9pg83pa-221511-400x400.jpg" alt="" style="width: 200px;"></a>
+                    <div>Ổ CỨNG SSD 256GB</div>
                     <p>HP 348 G7 i3 8130U (9PG83PA)
                     <div>10.990.000đ</div>
 
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 14 inch eValu LMP-T002A Đen và 1 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 14 inch eValu LMP-T002A Đen và 1 K.mãi khác
                     </div>
-                </p>
-            </td>
-            <td><a href="">
-                <img src="img/product/asus-x409ja-i3-ek015t-220526-2-400x400.jpg" alt="" style="width: 200px;"></a>
+                    </p>
+                </td>
+                <td><a href="">
+                        <img src="img/product/asus-x409ja-i3-ek015t-220526-2-400x400.jpg" alt=""
+                            style="width: 200px;"></a>
 
-                <div>Ổ CỨNG 1TB</div>
-                <p>Asus VivoBook X409JA i3 1005G1 (EK015T)
-                    <div>11.590.000₫</div> 
+                    <div>Ổ CỨNG 1TB</div>
+                    <p>Asus VivoBook X409JA i3 1005G1 (EK015T)
+                    <div>11.590.000₫</div>
                     <div>
                         <img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Túi chống sốc Laptop 14 inch eValu LMP-T002A Đen và 2 K.mãi khác
+                            style="width: 30px;"> Tặng Túi chống sốc Laptop 14 inch eValu LMP-T002A Đen và 2 K.mãi khác
                     </div>
-                </p>
-            </td>
-            <td><a href="">
-                <img src="img/product/dell-inspiron-5593-i5-1035g1-8gb-256gb-2gb-mx230-w-213570-400x400.jpg" alt="" style="width: 200px;"></a>
+                    </p>
+                </td>
+                <td><a href="">
+                        <img src="img/product/dell-inspiron-5593-i5-1035g1-8gb-256gb-2gb-mx230-w-213570-400x400.jpg"
+                            alt="" style="width: 200px;"></a>
 
-                <div>RAM 8GB Ổ CỨNG SSD 256GB</div>
-                <p>Dell Inspiron 5593 i5 1035G1 (N5I5513W)
+                    <div>RAM 8GB Ổ CỨNG SSD 256GB</div>
+                    <p>Dell Inspiron 5593 i5 1035G1 (N5I5513W)
                     <div>17.990.000₫ </div>
                     <div><img src="img/product/tui-chong-soc-laptop-156-inch-evalu-lmp-t002a-xam-1-100x100.jpg" alt=""
-                        style="width: 30px;"> Tặng Chuột không dây eValu M806 và 2 K.mãi khác
+                            style="width: 30px;"> Tặng Chuột không dây eValu M806 và 2 K.mãi khác
                     </div>
-                </p>
-            </td>
-            
-            
-        </tr>
-    </table>
-    
-    <div id="footer">
-        <p>Thông tin thành viên nhóm 4:</p>
-        <p>Họ tên: Huỳnh Quang Nhân</p>
-        <p>Email: <a href="#">nhan.huynh030493@gmail.com</a></p><br>
+                    </p>
+                </td>
 
-        <p>Họ tên: Phan Nguyễn Hoài Trung</p>
-        <p>Email: <a href="#">castlebeex@gmail.com</a></p><br>
 
-        <p>Họ tên: Nguyễn Quỳnh Nga</p>
-        <p>Email:<a href="#">ngquynhnga74@gmail.com</a></p>
-    </div>
-<script src="./js/register.js"></script>
-<script src="./js/script.js"></script>
-<script src="./js/slider.js"></script>
+            </tr>
+        </table>
+
+        <div id="footer">
+            <p>Thông tin thành viên nhóm 4:</p>
+            <p>Họ tên: Huỳnh Quang Nhân</p>
+            <p>Email: <a href="#">nhan.huynh030493@gmail.com</a></p><br>
+
+            <p>Họ tên: Phan Nguyễn Hoài Trung</p>
+            <p>Email: <a href="#">castlebeex@gmail.com</a></p><br>
+
+            <p>Họ tên: Nguyễn Quỳnh Nga</p>
+            <p>Email:<a href="#">ngquynhnga74@gmail.com</a></p>
+        </div>
+        <script src="./js/register.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/slider.js"></script>
 
 </body>
+
 </html>

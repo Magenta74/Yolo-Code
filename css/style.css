@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -60,7 +67,19 @@
   text-align: left;
 }
 
+.hRight {
+  display: flex;
+  margin-right: 10px;
+}
+#gio {
+  width: 50px;
+  height: 35px;
+}
 
+#gio img {
+  width: 100%;
+  height: 100%;
+}
 .taikhoan-content a:hover {
   background-color: #ddd;
 }
